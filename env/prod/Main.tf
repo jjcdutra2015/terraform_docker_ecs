@@ -5,3 +5,7 @@ module "prod" {
 
   cargoIAM = "producao"
 }
+
+output "IP_ALB" {
+  value = module.prod.IP
+}
